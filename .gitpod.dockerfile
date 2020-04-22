@@ -5,8 +5,8 @@ RUN ["npm", "install", "-g", "http-server", "mongodb", "node-gyp", "node-pre-gyp
 RUN ["npm", "install", "-g", "now"]
 
 USER gitpod
-RUN curl -o wekan.zip https://releases.wekan.team/wekan-3.97.zip
-RUN unzip wekan.zip
+RUN curl -s -o wekan.zip https://releases.wekan.team/wekan-3.97.zip
+RUN unzip -qq wekan.zip
 RUN cd /home/gitpod/bundle/programs/server
 RUN npm install
 
