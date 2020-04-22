@@ -6,7 +6,7 @@ RUN ["npm", "install", "-g", "now"]
 
 RUN ["pip3", "install", "Flask", "pytesseract", "flask-cors"]
 
-RUN curl https://releases.wekan.team/wekan-3.97.zip
-RUN unzip wekan-3.97.zip
+RUN curl -o wekan.zip https://releases.wekan.team/wekan-3.97.zip
+RUN unzip wekan.zip
 
 USER gitpod
